@@ -46,6 +46,7 @@ $("#addPizza").click(function(event){
 $("#submitOrder").click(function(){
   var address = $("#submitOrderAddress").val();
   $("#orderOnWay").show();
+  $(".deliveryGuy").hide();
   $("#orderDetail").text("We will deliver your order, above, to: " + address);
 });
 });

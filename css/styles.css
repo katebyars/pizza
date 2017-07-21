@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 
+.jumbotron {
+  font-family: Monoton;
+  font-size: 140px;
+  color: white;
+  background: inherit;
+  text-align: center;
+}
 body {
   background: url("../img/pizza.jpg");
   background-repeat: no-repeat;
@@ -14,10 +22,6 @@ body {
   display: block;
 }
 
-#empty {
-  height: 150px;
-}
-
 h1, h2, h3, h4, h5 {
   font-family: sans-serif;
   color: #12a501;
@@ -30,4 +34,22 @@ p, label, ul, span {
 
 #checkbox {
   color: gray;
+}
+
+.panel {
+  height: 800px;
+}
+
+.btn {
+  color: #12a501;
+  font-size: 22px;
+  height: 50px;
+  text-align: center;
+}
+
+.deliveryGuy {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/delivery.jpg");
+  background-size: cover;
 }

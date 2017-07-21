@@ -9,7 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="row" id="empty">
+      <div class="jumbotron">
+        ITSAPIZZA
       </div>
         <div class="row">
           <div class="col-md-6">
@@ -36,7 +37,7 @@
                   <input type="checkbox" name="toppings" value="balsamic broccoli" id="checkbox"><p>Balsamic Broccoli</p>
                   <input type="checkbox" name="toppings" value="caramelized onions" id="checkbox"><p>Caramelized Onions</p>
                   <input type="checkbox" name="toppings" value="feta" id="checkbox"><p>Feta</p>
-                  <button id="addPizza" type="button" class="btn"><p>Add Pizza to Order</p></button>
+                  <button id="addPizza" type="button" class="btn center-block">Add Pizza to Order</button>
                 </form>
               </div>
             </div>
@@ -47,6 +48,8 @@
                 <h1>Your Order</h1>
               </div>
               <div class="panel-body">
+                <div class="deliveryGuy">
+                </div>
               <div>
                 <ul id="pizzaDisplay">
                 </ul>
@@ -54,8 +57,8 @@
               <form class="pizzaOrderDetails" action="index.html" method="post">
                 <p>Don't forget to add your delivery address!</p>
                 <label for="">Address</label>
-                <input type="text" id="submitOrderAddress">
-                <button id="submitOrder" type="button" class="btn" name="button">Order My Pizzas</button>
+                <input type="text" id="submitOrderAddress"><br><br>
+                <button id="submitOrder" type="button" class="btn center-block" name="button">Order My Pizzas</button>
               </form>
               <div id="orderOnWay">
                 <h4>Good Job!</h4>
