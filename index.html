@@ -17,18 +17,18 @@
               <label for="pizzaName">Name Your Pizza!</label>
               <input id="pizzaName" class="form-control" type="text" >
             </div>
-            <!-- <select class="form-control" id="size">
+            <select class="form-control" id="size">
               <option>Small</option>
               <option>Medium</option>
               <option>Large</option>
             </select>
-            <input type="checkbox" name="toppings" value="0">Cheese<br>
-            <input type="checkbox" name="toppings" value="1">Bacon<br>
-            <input type="checkbox" name="toppings" value="2">Balsamic Broccoli<br>
-            <input type="checkbox" name="toppings" value="3">Caramelized Onions<br>
-            <input type="checkbox" name="toppings" value="3">Feta<br> -->
+            <input type="checkbox" name="toppings" value="cheese">Cheese<br>
+            <input type="checkbox" name="toppings" value="bacon">Bacon<br>
+            <input type="checkbox" name="toppings" value="balsamic broccoli">Balsamic Broccoli<br>
+            <input type="checkbox" name="toppings" value="caramelized onions">Caramelized Onions<br>
+            <input type="checkbox" name="toppings" value="feta">Feta<br>
 
-            <button id="addPizza" type="click" class="btn">Add Pizza to Order</button>
+            <button id="addPizza" type="button" class="btn">Add Pizza to Order</button>
 
 
           </form>
@@ -37,8 +37,14 @@
         </div>
           </div>
           <h1>Output Area</h1>
-        <div id="pizzaDisplay">
+        <div>
+          <ul id="pizzaDisplay">
+
+          </ul>
         </div>
+        <form class="pizzaOrderDetails" action="index.html" method="post">
+          <button id="submitOrder" type="button" class="btn" name="button">Order My Pizzas</button>
+        </form>
       </div>
   </body>
 </html>
