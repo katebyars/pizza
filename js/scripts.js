@@ -1,9 +1,8 @@
 $(document).ready(function(){
 //BACK END LOGIC
-function Pizza (nameOf, size, address, cost) {
+function Pizza (nameOf, size, price) {
   this.nameOfPizza = nameOf;
   this.size = size;
-  this.address = address;
   this.price = price;
   this.toppings = [];
 }
@@ -24,19 +23,20 @@ if (size = "large") {
 }
 //FRONT END LOGIC
 
-$("#addPizza").submit(function(){
-  var currentPizza = new Pizza;
-  this.pizzaName = $("#pizzaName").val();
-  pizzaSize
-  this.toppings = $("input:checkbox[name=toppings]:checked").each(function(){
+$("#addPizza").click(function(){
+  alert("hi");
+  var currentName = $("#pizzaName").val();
+  var currentSize = $("#size").val();
+  var currentToppings = $("input:checkbox[name=toppings]:checked").each(function(){
     $(this).val();
   });
-  this.price.cost (pizzaSize, toppings);
-  ("#pizzaDisplay").append(this.Pizza);
+  var currentPrice = 0;
+  var currentPizza = new Pizza (currentName, currentSize, currentPrice);
+  currentPrice = currentPizza.cost(currentSize, currentToppings);
+  $("#pizzaDisplay").text(this.Pizza);
 });
-
-
-$("#submitOrder").submit(function(){
-  hide order details + show 'your order is on the way'
-});
+//
+// $("#submitOrder").submit(function(){
+//   hide order details + show 'your order is on the way'
+// });
 });
