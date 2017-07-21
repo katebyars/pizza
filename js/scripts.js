@@ -2,22 +2,22 @@ $(document).ready(function(){
 //BACK END LOGIC
 function Pizza (nameOf, sizeOf, price) {
   this.nameOfPizza = nameOf;
-  this.sizeOf = size;
+  this.sizeOf = sizeOf;
   this.price = price;
   this.toppings = [];
 }
 
 Pizza.prototype.cost = function calculateCost(size, toppingsArray) {
   var cost = 0;
-if (size = "large") {
+  if (size === "Large") {
     cost +=5;
-  } else if (size = "medium") {
+  } else if (size === "Medium") {
     cost +=4;
-  } else if (size = "small") {
+  } else if (size === "Small") {
     cost +=3;
   }
   for (i=0; i < toppingsArray.length; i +=1) {
-    cost +=i;
+    cost +=1;
   }
   return cost;
 }
@@ -34,12 +34,15 @@ $("#addPizza").click(function(event){
     var currentToppings= $(this).val();
     listOfToppings.push(currentToppings);
   });
- var currentPizza = new Pizza (currentName, currentSize, currentPrice);
-  currentPrice = currentPizza.cost(currentSize, currentToppings);
-  $("#pizzaDisplay").append("<li>" + "$" + currentPrice + " "+ currentName + "'s " + currentSize + " pizza has: " + listOfToppings + "<br>");
+  var currentPizza = new Pizza (currentName, currentSize, currentPrice);
+  this.price = currentPizza.cost(currentSize, listOfToppings);
+  this.nameOfPizza = currentName;
+  this.sizeOf = currentSize;
+  this.toppings = listOfToppings;
+  $("#pizzaDisplay").append("<li>" + "$" + this.price + " "+ this.nameOfPizza + "'s " + this.sizeOf + " pizza has: " + this.toppings + "<br>");
+  listOfToppings = [];
 });
 
 $("#submitOrder").click(function(){
-  // hide order details + show 'your order is on the way'
 });
 });
