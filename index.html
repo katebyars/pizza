@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Order Area</h1>
+          <label for="pizzaName">Name Your Pizza!</label>
+          <input type="text" id="pizzaName">
+          <form class="pizzaDetails">
+            <select class="form-control" id="size">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+            <input type="checkbox" name="toppings" value="0">Cheese<br>
+            <input type="checkbox" name="toppings" value="1">Bacon<br>
+            <input type="checkbox" name="toppings" value="2">Balsamic Broccoli<br>
+            <input type="checkbox" name="toppings" value="3">Caramelized Onions<br>
+            <input type="checkbox" name="toppings" value="3">Feta<br>
+            <button type="submit" name="pizzaDetails">Add Pizza to Order</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h1>Output Area</h1>
+          <div id="pizzaDisplay">
+            <ul>
+
+            </ul>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
