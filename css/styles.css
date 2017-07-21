@@ -1,7 +1,33 @@
+
+body {
+  background: url("../img/pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
 #orderOnWay {
   display: none;
 }
 
 #yourOrder {
   display: block;
+}
+
+#empty {
+  height: 150px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: sans-serif;
+  color: #12a501;
+}
+
+p, label, ul, span {
+  font-size: 20px;
+  color: gray;
+}
+
+#checkbox {
+  color: gray;
 }
