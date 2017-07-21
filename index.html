@@ -5,51 +5,57 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza</title>
+    <title>ItsAPizza</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
         ITSAPIZZA
       </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h1>Order Area</h1>
-              </div>
-              <div class="panel-body">
-                <form id="pizzaDetails">
-                  <div class="form-group">
-                    <label for="pizzaName">Name Your Pizza!</label>
-                    <input id="pizzaName" class="form-control" type="text" >
-                  </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h1>Order Area</h1>
+            </div>
+            <div class="panel-body">
+              <form id="pizzaDetails">
+                <div class="form-group">
+                  <label for="pizzaName">Name Your Pizza!</label>
+                  <input id="pizzaName" class="form-control" type="text" >
+                </div>
                   <label for="size">What Size Pizza?</label>
+                  <center><p>
+                    Small - $3.00
+                    Medium - $4.00
+                    Large - $5.00
+                  </p></center>
                   <select class="form-control" id="size">
                     <option>Small</option>
                     <option>Medium</option>
                     <option>Large</option>
                   </select>
                   <label for="checkbox">Which Toppings Would You Like?</label>
-                  <p>Each topping is $1.00. Cheese is complimentary!</p>
-                  <input type="checkbox" name="toppings" value="cheese" id="checkbox"><p>Cheese</p>
-                  <input type="checkbox" name="toppings" value="bacon" id="checkbox"><p>Bacon</p>
-                  <input type="checkbox" name="toppings" value="balsamic broccoli" id="checkbox"><p>Balsamic Broccoli</p>
-                  <input type="checkbox" name="toppings" value="caramelized onions" id="checkbox"><p>Caramelized Onions</p>
-                  <input type="checkbox" name="toppings" value="feta" id="checkbox"><p>Feta</p>
-                  <button id="addPizza" type="button" class="btn center-block">Add Pizza to Order</button>
-                </form>
-              </div>
+                    <p>Each topping is $1.00.</p>
+                    <input type="checkbox" name="toppings" value="cheese" id="checkbox"><p>Cheese</p>
+                    <input type="checkbox" name="toppings" value="bacon" id="checkbox"><p>Bacon</p>
+                    <input type="checkbox" name="toppings" value="balsamic broccoli" id="checkbox"><p>Balsamic Broccoli</p>
+                    <input type="checkbox" name="toppings" value="caramelized onions" id="checkbox"><p>Caramelized Onions</p>
+                    <input type="checkbox" name="toppings" value="feta" id="checkbox"><p>Feta</p>
+                <button id="addPizza" type="button" class="btn center-block">Add Pizza to Order
+                </button>
+              </form>
             </div>
           </div>
-          <div class="col-md-6" id="yourOrder">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h1>Your Order</h1>
+        </div>
+        <div class="col-md-6" id="yourOrder">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h1>Your Order</h1>
+            </div>
+            <div class="panel-body">
+              <div class="deliveryGuy">
               </div>
-              <div class="panel-body">
-                <div class="deliveryGuy">
-                </div>
               <div>
                 <ul id="pizzaDisplay">
                 </ul>
@@ -62,15 +68,13 @@
               </form>
               <div id="orderOnWay">
                 <h4>Good Job!</h4>
-                  <p>
-                    You just used the internet to order pizza!
-                  </p>
-                  <span id="orderDetail"></span>
+                  <p>You just used the internet to order pizza!</p>
+                <span id="orderDetail"></span>
               </div>
-            </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </body>
 </html>
