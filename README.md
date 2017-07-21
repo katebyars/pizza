@@ -10,12 +10,13 @@ _{This game was created for the Introduction to Programming course at Epicodus, 
 
 ## Specifications following BDD
 
-* __
-  * __
-  * __
-* __
-  * __
-  * __
+* _Customers can choose a pizza size._
+  * _Examples : Small, Medium, Large_
+* _Customers can choose one or multiple pizza toppings._
+  * _Examples: broccoli, feta, cheese._
+* _Customers can add one or multiple pizzas to their cart before checkout._
+* _Customers can name their pizzas with nicknames._
+* _Customers can enter a delivery address._
 
 ## Known Bugs
 
