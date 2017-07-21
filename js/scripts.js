@@ -20,22 +20,25 @@ $(document).ready(function(){
 //     cost +=i;
 //   }
 //   return cost;
-// }
+}
 //FRONT END LOGIC
 
-$("#addPizza").submit(function(event){
+$("#addPizza").click(function(event){
   event.preventDefault();
-  debugger;
-  var currentName = $("input#pizzaName").val();
-  var currentSize = $("#size").val();
-  var currentToppings = $("input:checkbox[name=toppings]:checked").each(function(){
-    $(this).val();
-  });
-  var currentPrice = 0;
-  var currentPizza = new Pizza (currentName, currentSize, currentPrice);
-  currentPrice = currentPizza.cost(currentSize, currentToppings);
-
-  // $("#pizzaDisplay").text(this.Pizza);
+    alert("hi");
+    var currentName = $("#pizzaName").val();
+    alert("his");
+    alert(currentName);
+  // $("#pizzaDisplay").text(currentName);
+  // var currentSize = $("#size").val();
+  // var currentToppings = $("input:checkbox[name=toppings]:checked").each(function(){
+  //   $(this).val();
+  // });
+  // var currentPrice = 0;
+  // var currentPizza = new Pizza (currentName, currentSize, currentPrice);
+  // currentPrice = currentPizza.cost(currentSize, currentToppings);
+  //
+  $("#pizzaDisplay").text(currentName);
 });
 //
 // $("#submitOrder").submit(function(){
