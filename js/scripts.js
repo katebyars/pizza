@@ -1,9 +1,8 @@
-$(document).ready(function(){
 //BACK END LOGIC
-  function Pizza (nameOf, sizeOf, price) {
+  function Pizza (nameOf, sizeOf, priceOf) {
     this.nameOfPizza = nameOf;
     this.sizeOf = sizeOf;
-    this.price = price;
+    this.priceOf = 0;
     this.toppings = [];
   }
   Pizza.prototype.cost = function calculateCost(size, toppingsArray) {
@@ -20,24 +19,26 @@ $(document).ready(function(){
     }
     return cost;
   }
+
+  // var currentName = $("#pizzaName").val();
+  // var currentSize = $("#size").val();
+  // var currentToppings = [];
+  // var listOfToppings = [];
+
+  // var currentPizza = new Pizza (currentName, currentSize, currentPrice);
+  // this.price = currentPizza.cost(currentSize, listOfToppings);
+  // this.nameOfPizza = currentName;
+  // this.sizeOf = currentSize;
+  // this.toppings = listOfToppings;
+$(document).ready(function(){
   //FRONT END LOGIC
   $("#addPizza").click(function(event){
     event.preventDefault();
     $(".deliveryGuy").hide();
-    var currentName = $("#pizzaName").val();
-    var currentSize = $("#size").val();
-    var currentPrice = 0;
-    var currentToppings = [];
-    var listOfToppings = [];
     $("input:checkbox[name=toppings]:checked").each(function(){
       var currentToppings= $(this).val();
       listOfToppings.push(currentToppings);
     });
-    var currentPizza = new Pizza (currentName, currentSize, currentPrice);
-    this.price = currentPizza.cost(currentSize, listOfToppings);
-    this.nameOfPizza = currentName;
-    this.sizeOf = currentSize;
-    this.toppings = listOfToppings;
     $("#pizzaDisplay").append("<li>" + "$" + this.price + " "+ this.nameOfPizza + "'s " + this.sizeOf + " pizza has: " + this.toppings + "<br>");
       listOfToppings = [];
   });
