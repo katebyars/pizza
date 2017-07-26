@@ -10,14 +10,20 @@ _{This game was created for the Introduction to Programming course at Epicodus, 
 
 ## Specifications following BDD
 
-* _Customers can choose a pizza size._
+* _Pizzas have a size._
   * _Examples : Small, Medium, Large_
-* _Customers can choose one or multiple pizza toppings._
-  * _Examples: broccoli, feta, cheese._
-* _Customers can add one or multiple pizzas to their cart before checkout._
-* _Customers can name their pizzas with nicknames._
-* _Customers can enter a delivery address._
-
+* _Pizzas have a size, and toppings._
+  * _Example : Small, caramelized onions + bacon_
+* _Pizzas can be named._
+  * _Example : Small, caramelized onions + bacon : Kate's Pizza_
+* _Pizza price is calculated based on size._
+  * _Example : Small pizza = $4.00_
+* _Pizza price is calculated based on size and adds a dollar per topping._
+  * _Example : Small pizza, with feta = $5.00_
+* _Multiple pizzas are on the same order._
+  * _Example : Small pizza, with feta, $5.00 AND Medium pizza, with bacon, $5.00_
+* _Multiple pizzas in an order are delivered to a single address._
+  * _Example : Small pizza, with feta, $5.00 AND Medium pizza, with bacon, $5.00, 1234 Easy Street Anchorage, Alaska 98880_
 ## Known Bugs
 
 _{There are no known bugs in this program.}_
