@@ -1,13 +1,10 @@
 //BACK END LOGIC
-//Constructors
+//Constructor
 function Pizza(nameOf, sizeOf, priceOf){
   this.nameOf = nameOf;
   this.sizeOf = sizeOf;
   this.priceOf = 0;
   this.toppings = [];
-}
-function Order(aPizza) {
-  pizzas = [];
 }
 //Prototypes
 Pizza.prototype.getToppings = function(toppingInputs) {
@@ -16,7 +13,7 @@ Pizza.prototype.getToppings = function(toppingInputs) {
     pizzasToppings.push(topping);
   });
   this.toppings = pizzasToppings;
-  }
+}
 Pizza.prototype.cost = function(sizeOf, toppingsArray){
   if (this.sizeOf === "Large") {
     this.priceOf +=5;
@@ -30,7 +27,6 @@ Pizza.prototype.cost = function(sizeOf, toppingsArray){
   }
   return this.priceOf;
 }
-
 //FRONT END LOGIC
 $(document).ready(function(){
   $("#addApizza").click(function(event){
@@ -45,7 +41,6 @@ $(document).ready(function(){
     });
     thisPizza.getToppings(newToppings);
     thisPizza.sizeOf = $("#size").val();
-    console.log(this.Pizza)
     thisPizza.priceOf = thisPizza.cost(thisPizza.SizeOf, thisPizza.toppings);
     $("#pizzaDisplay").append("<li>" + "$" + thisPizza.priceOf + " "+ thisPizza.nameOf + "'s " + thisPizza.sizeOf + " pizza has: " + thisPizza.toppings + "<br>");
     });
