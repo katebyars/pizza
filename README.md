@@ -1,12 +1,12 @@
-# _{Pizza Delivery}_
+# _Pizza Delivery_
 
-#### _{A Pizza Delivery site}, {July 21st, 2017}_
+#### _A Pizza Delivery site}, {July 21st, 2017_
 
-#### By _**{Kate Byars}**_
+#### By _**Kate Byars**_
 
 ## Description
 
-_{This game was created for the Introduction to Programming course at Epicodus, Portland.}_
+_A website  created for the Introduction to Programming course at Epicodus, Portland._
 
 _The home page includes an area for ordering and an area for viewing the completed order._
 ![Description](https://github.com/katebyars/pizza/blob/master/img/1.png)
