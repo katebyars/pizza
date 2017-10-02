@@ -8,6 +8,19 @@
 
 _{This game was created for the Introduction to Programming course at Epicodus, Portland.}_
 
+_The home page includes an area for ordering and an area for viewing the completed order._
+![Description](https://github.com/katebyars/pizza/blob/master/img/1.png)
+_The user can select a pizza size._
+![Description](https://github.com/katebyars/pizza/blob/master/img/2.png)
+_The user can select toppings for their pizza._
+![Description](https://github.com/katebyars/pizza/blob/master/img/3.png)
+_Once the pizza is added to the order, the user can see that pizza's details in the Your Order area._
+![Description](https://github.com/katebyars/pizza/blob/master/img/4.png)
+_The user can add multiple pizzas for multiple people._
+![Description](https://github.com/katebyars/pizza/blob/master/img/4a.png)
+_The user can add a delivery address and see a confirmation._
+![](https://github.com/katebyars/pizza/blob/master/img/5.png)
+
 ## Specifications following BDD
 
 * _Pizzas have a size._
