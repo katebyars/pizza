@@ -1,6 +1,6 @@
 # _Pizza Delivery_
 
-#### _A Pizza Delivery site}, {July 21st, 2017_
+#### _A Pizza Delivery site, July 21st, 2017_
 
 #### By _**Kate Byars**_
 
